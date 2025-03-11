@@ -24,6 +24,39 @@ tanggal = (str(tgl)+' '+str(bln)+' '+str(thn))
 date = strftime('%H:%M:%S')
 hari = datetime.now().strftime("%A")
 
+#----------COLOR----------#
+Z = "\x1b[0;90m"     # Hitam
+M = "\x1b[38;5;196m" # Merah
+H = "\x1b[38;5;46m"  # Hijau
+K = "\x1b[38;5;226m" # Kuning
+B = "\x1b[38;5;44m"  # Biru
+U = "\x1b[0;95m"     # Ungu
+O = "\x1b[0;96m"     # Biru Muda
+P = "\x1b[38;5;231m" # Putih
+J = "\x1b[38;5;208m" # Jingga
+A = "\x1b[38;5;248m" # Abu-Abu
+N = '\x1b[0m'	# WARNA MATI
+PT = '\x1b[1;97m' # PUTIH TEBAL
+MT = '\x1b[1;91m' # MERAH TEBAL
+HT = '\x1b[1;92m' # HIJAU TEBAL
+KT = '\x1b[1;93m' # KUNING TEBAL
+BT = '\x1b[1;94m' # BIRU TEBAL
+UT = '\x1b[1;95m' # UNGU TEBAL
+OT = '\x1b[1;96m' # BIRU MUDA TEBAL
+
+#----------COLOR2----------#
+Z2 = "[#000000]" # HITAM
+M2 = "[#FF0000]" # MERAH
+H2 = "[#00FF00]" # HIJAU
+K2 = "[#FFFF00]" # KUNING
+B2 = "[#00C8FF]" # BIRU
+U2 = "[#AF00FF]" # UNGU
+N2 = "[#FF00FF]" # PINK
+O2 = "[#00FFFF]" # BIRU MUDA
+P2 = "[#FFFFFF]" # PUTIH
+J2 = "[#FF8F00]" # JINGGA
+A2 = "[#AAAAAA]" # ABU-ABU
+
 #----------USERAGENT----------#
 ua_default = 'Mozilla/5.0 (Linux; Android 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.66 Mobile Safari/537.36'
 ua_samsung = 'Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/35.0.0.48.273;]'
@@ -87,7 +120,7 @@ def bot_share():
 		requests.post(f"https://graph.facebook.com/826244541950192/comments/?message={kom1}&access_token={token}", headers = {"cookie":cok})
 	except:
 		os.system("rm .token.xx.txt .cookie.xx.txt")
-		cetak(nel(f'\x1b[1;95COOKIE INVALID!!',width=22,style=f"#00FF00"));time.sleep(1.5)
+		cetak(nel(f'{OT} COOKIE INVALID!!',width=22,style=f"#00FF00"));time.sleep(1.5)
 		login()
 	os.system('clear')
 	logo_menu()
