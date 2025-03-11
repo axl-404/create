@@ -92,10 +92,14 @@ def logo_menu():
 #----------MENU----------#
 def login():
 	os.system("clear")
-	cetak(nel(f'   {H2}       COOKIES \n\n      {H2}       ',title=f'{P2} {H2}       [ {OT} WELCOME {H2}]',width=54,padding=(1,4),style='blue'))
-	cetak(nel(f'{P2}        {H2}   TAKE COOKIES FROM KIWI BROWSER',subtitle=f'{PT}┌─[ {OT} COOKIES {PT}]',subtitle_align='left',width=54,padding=1,style='blue'))
-	cookie = input(f"{P}   └──> : {H}")
-	try:
+	cetak(nel(f'┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓┃     WELCOME TO FACEBOOK AUTO SHARE TOOLS     ┃┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛'))
+	cetak(nel(f'╭──────────────────  [ ••• ] ──────────────────╮
+│
+│
+│
+│      
+╰──────────────────────────────────────────────╯'))
+	     try:
 		data = ses.get("https://business.facebook.com/business_locations",headers={"user-agent":"Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36","cookie":cookie})
 		find_token = re.search("(EAAG\w+)", data.text)
 		open(".token.xx.txt", "w").write(find_token.group(1))
