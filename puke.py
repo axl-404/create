@@ -45,15 +45,15 @@ def logo_menu():
   li = ' WELCOME TO FACEBOOK SHARE TOOLS '
   lo = mark(li, style='white')
   sol().print(lo, style='blue')
- banner = {f'''
-888    d8P  8888888 8888888888     d8888 Y88b   d88P 
-888   d8P     888   888           d88888  Y88b d88P  
-888  d8P      888   888          d88P888   Y88o88P   
-888d88K       888   8888888     d88P 888    Y888P    
-8888888b      888   888        d88P  888     888     
-888  Y88b     888   888       d88P   888     888     
-888   Y88b    888   888      d8888888888     888     
-888    Y88b 8888888 888     d88P     888     888 '''}
+ banner = f"'
+\x1b[0;95m888    d8P  8888888 8888888888     d8888 Y88b   d88P 
+\x1b[0;95m888   d8P     888   888           d88888  Y88b d88P  
+\x1b[0;95m888  d8P      888   888          d88P888   Y88o88P   
+\x1b[0;95m888d88K       888   8888888     d88P 888    Y888P    
+\x1b[0;95m8888888b      888   888        d88P  888     888     
+\x1b[0;95m888  Y88b     888   888       d88P   888     888     
+\x1b[0;95m888   Y88b    888   888      d8888888888     888     
+\x1b[0;95m888    Y88b 8888888 888     d88P     888     888 "'
 cetak(nel(banner,title=f'{P2} {H2}[ {P2}••• {H2}]',subtitle_align='left',padding=1,style='blue'))
 
 #----------MENU----------#
