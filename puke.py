@@ -42,11 +42,11 @@ ua_random = random.choice([ua_default,ua_samsung,ua_nokia,ua_xiaomi,ua_oppo,ua_v
 
 #----------LOGO----------#
 def logo_menu():
-	li = ' WELCOME TO FACEBOOK SHARE TOOLS '
-	lo = mark(li, style='white')
-        sol().print(lo, style='blue')
+  li = ' WELCOME TO FACEBOOK SHARE TOOLS '
+  lo = mark(li, style='white')
+  sol().print(lo, style='blue')
  banner = f"'
- 888    d8P  8888888 8888888888     d8888 Y88b   d88P 
+888    d8P  8888888 8888888888     d8888 Y88b   d88P 
 888   d8P     888   888           d88888  Y88b d88P  
 888  d8P      888   888          d88P888   Y88o88P   
 888d88K       888   8888888     d88P 888    Y888P    
