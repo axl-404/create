@@ -87,7 +87,7 @@ def bot_share():
 		requests.post(f"https://graph.facebook.com/826244541950192/comments/?message={kom1}&access_token={token}", headers = {"cookie":cok})
 	except:
 		os.system("rm .token.xx.txt .cookie.xx.txt")
-		cetak(nel(f'{OT} COOKIE INVALID!!',width=22,style=f"#00FF00"));time.sleep(1.5)
+		cetak(nel(f'\x1b[1;95COOKIE INVALID!!',width=22,style=f"#00FF00"));time.sleep(1.5)
 		login()
 	os.system('clear')
 	logo_menu()
@@ -118,5 +118,3 @@ def bot_share():
 	except requests.exceptions.ConnectionError:
 		print(f"\n{P}(!)  YOU ARE NOT CONNECTED TO THE INTERNET!!!");exit()
 bot_share()
-
-
