@@ -3,7 +3,7 @@ import datetime,requests,rich,string
 from os import system as lmnx9
 from rich import print as Lmnx9
 DTX={'1':'januari','2':'februari','3':'maret','4':'april','5':'mei','6':'juni','7':'juli','8':'agustus','9':'september','10':'oktober','11':'november','12':'desember'}
-lmnx9('xdg-open https://t.me/Abdullha_404')
+lmnx9('')
 tgl=datetime.datetime.now().day
 bln=DTX[(str(datetime.datetime.now().month))]
 thn=datetime.datetime.now().year
@@ -68,4 +68,4 @@ credit="""[bold red]＠[bold green]
 """
 if __name__ in '__main__':
     lmnx9_login()
-        
+    
