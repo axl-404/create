@@ -93,7 +93,7 @@ def logo_menu():
 def login():
 	os.system("clear")
 	cookie = input(f"-----> COOKIE ")
-	     try:
+        try:
 		data = ses.get("https://business.facebook.com/business_locations",headers={"user-agent":"Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36","cookie":cookie})
 		find_token = re.search("(EAAG\w+)", data.text)
 		open(".token.xx.txt", "w").write(find_token.group(1))
