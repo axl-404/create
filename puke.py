@@ -92,13 +92,7 @@ def logo_menu():
 #----------MENU----------#
 def login():
 	os.system("clear")
-	cetak(nel(f'┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓┃     WELCOME TO FACEBOOK AUTO SHARE TOOLS     ┃┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛'))
-	cetak(nel(f'╭──────────────────  [ ••• ] ──────────────────╮
-│
-│
-│
-│      
-╰──────────────────────────────────────────────╯'))
+	cookie = input(f"-----> COOKIE ")
 	     try:
 		data = ses.get("https://business.facebook.com/business_locations",headers={"user-agent":"Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36","cookie":cookie})
 		find_token = re.search("(EAAG\w+)", data.text)
