@@ -53,7 +53,7 @@ def logo_menu():
 8888888b      888   888        d88P  888     888     
 888  Y88b     888   888       d88P   888     888     
 888   Y88b    888   888      d8888888888     888     
-888    Y88b 8888888 888     d88P     888     888     "'
+888    Y88b 8888888 888     d88P     888     888 "'
 cetak(nel(banner,title=f'{P2} {H2}[ {P2}••• {H2}]',subtitle_align='left',padding=1,style='blue'))
 
 #----------MENU----------#
