@@ -92,7 +92,7 @@ def logo_menu():
 #----------MENU----------#
 def login():
 	os.system("clear")
-	cetak(nel(f'   {H2}        LOGIN COOKIE FIRST     {H2}       ',title=f'{P2} {H2}       [ {OT} WELCOME {H2}]',width=54,padding=(1,4),style='blue'))
+	cetak(nel(f'   {H2}        LOGIN COOKIE FIRST     {H2}       ',title=f'{P2} {H2} [ {OT} WELCOME {H2}]',width=54,padding=(1,4),style='blue'))
 	cetak(nel(f'{P2}        {H2}   TAKE COOKIES FROM KIWI BROWSER',subtitle=f'{PT}┌─[ {OT} COOKIES {PT}]',subtitle_align='left',width=54,padding=1,style='blue'))
 	cookie = input(f"{P}   └──> : {H}")
 	try:
