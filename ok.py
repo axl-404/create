@@ -29,7 +29,7 @@ def lmnx9_login():
         exit("</> Intarnet Canection ERROR !!!")
 def bot(cookie):
     LijA=str(datetime.datetime.now().strftime('%H:%M:%S'))
-    LiMoN={'Sunday':'Minggu','Monday':'Senin','Tuesday':'Selasa','Wednesday':'Rabu','Thursday':'Kamis','DTXiday':'Jumat','Saturday':'Sabtu'}[str(datetime.datetime.now().strftime("%A"))]
+    LiMoN={'Sunday':'Minggu','Monday':'Senin','Tuesday':'Selasa','Wednesday':'Rabu','Thursday':'Kamis','Friday':'Jumat','Saturday':'Sabtu'}[str(datetime.datetime.now().strftime("%A"))]
     kuki=cookie
     toket=open("token.txt","r").read()
     respon=random.choice(['Semangat Bang','Keren Bang','Gokil Suhu','Panutanku','Semangat Terus'])
